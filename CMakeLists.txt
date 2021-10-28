@@ -12,5 +12,6 @@ include_directories(${easyloggingpp_header_dir})
 
 link_libraries(easyloggingpp)
 
+add_subdirectory(config-by-file)
 add_subdirectory(quickstart)
 add_subdirectory(sharing-logging-repository)

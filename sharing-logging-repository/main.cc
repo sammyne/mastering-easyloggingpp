@@ -17,6 +17,7 @@ int main(int argc, char* argv[]) {
   c.setToDefault();
   c.setGlobally(el::ConfigurationType::ToFile, "true");
   c.setGlobally(el::ConfigurationType::Filename, "el.log");
+  c.setGlobally(el::ConfigurationType::Format, "%datetime %levshort [%logger] %msg");
 
   el::Loggers::reconfigureAllLoggers(c);
 
